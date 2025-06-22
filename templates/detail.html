@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ company.name }}</h2>
+<p><strong>Location:</strong> {{ company.location }}</p>
+<p><strong>Business:</strong> {{ company.business }}</p>
+<p><strong>Employees:</strong> {{ company.employees_count }}</p>
+<a href="{{ url_for('list_companies') }}">Back to list</a>
+{% endblock %}

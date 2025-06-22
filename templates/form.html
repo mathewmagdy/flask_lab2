@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Create New Company</h2>
+<form method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br>
+
+    <label>Location:</label><br>
+    <input type="text" name="location" required><br>
+
+    <label>Business:</label><br>
+    <input type="text" name="business" required><br>
+
+    <label>Employees Count:</label><br>
+    <input type="number" name="employees_count" required><br><br>
+
+    <button type="submit">Create Company</button>
+</form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Company List</h2>
+<ul>
+{% for company in companies %}
+    <li>
+        <a href="{{ url_for('company_detail', id=company.id) }}">{{ company.name }}</a> |
+        {{ company.location }} | {{ company.business }} | Employees: {{ company.employees_count }}
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}
