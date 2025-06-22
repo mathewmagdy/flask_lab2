@@ -1,5 +1,5 @@
 class Company:
-    _id = 1
+    _id = 4
 
     def __init__(self, name, location, business, employees_count):
         self.id = Company._id
